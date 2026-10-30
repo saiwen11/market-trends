@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>市场指数/ETF 偏离图表 + TRIN看板 · 每日更新</title>
+<style>
+  body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f6f8;margin:0;padding:24px;color:#222;}
+  .wrap{max-width:760px;margin:0 auto;}
+  h1{font-size:22px;margin:0 0 4px;}
+  .sub{color:#888;font-size:13px;margin-bottom:20px;}
+  .card{background:#fff;border-radius:10px;padding:16px 18px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.06);display:flex;justify-content:space-between;align-items:center;}
+  .card .t{font-size:15px;font-weight:600;}
+  .card .d{font-size:12px;color:#999;margin-top:3px;}
+  .card a{text-decoration:none;background:#2d6cdf;color:#fff;padding:7px 14px;border-radius:6px;font-size:13px;white-space:nowrap;}
+  .card a:hover{background:#1f56b8;}
+  .note{font-size:12px;color:#888;line-height:1.7;margin-top:16px;border-top:1px solid #e3e5e8;padding-top:12px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>市场指数 / ETF 偏离图表 · TRIN 看板</h1>
+  <div class="sub">每个交易日收盘后自动更新（数据截至最近交易日）· 由每日定时任务发布</div>
+  <div class="card"><div><div class="t">指数偏离图表（日频 · 四大宽基）</div><div class="d">上证50 / 沪深300 / 中证500 / 中证1000 · MA10/20/60</div></div><a href="daily_broad.html" target="_blank">打开</a></div>
+  <div class="card"><div><div class="t">指数偏离图表（日频 · 三大指数）</div><div class="d">上证指数 / 创业板指 / 科创50 · MA10/20/60</div></div><a href="daily_three.html" target="_blank">打开</a></div>
+  <div class="card"><div><div class="t">指数偏离图表（周频 · 三大指数）</div><div class="d">上证指数 / 创业板指 / 科创50 · 每周最后一个交易日</div></div><a href="weekly_three.html" target="_blank">打开</a></div>
+  <div class="card"><div><div class="t">指数偏离图表（周频 · 四大宽基）</div><div class="d">上证50 / 沪深300 / 中证500 / 中证1000 · 每周最后一个交易日</div></div><a href="weekly_broad.html" target="_blank">打开</a></div>
+  <div class="card"><div><div class="t">股指期货基差率 · 滚动历史分位走势</div><div class="d">IF0 / IH0 / IC0 / IM0 · 逐日滚动分位</div></div><a href="futures_basis_pct.html" target="_blank">打开</a></div>
+  <div class="card"><div><div class="t">TRIN 日级看板（近十年）</div><div class="d">严格TRIN（Tushare全市场聚合）· 市场宽度 · 全量历史明细</div></div><a href="trin_dashboard.html" target="_blank">打开</a></div>
+  <div class="card"><div><div class="t">MCL 麦克连摆动指标（近十年）</div><div class="d">EMA19−EMA39 · 全市场宽度动量 · 0轴/±500超买超卖线</div></div><a href="mcl_dashboard.html" target="_blank">打开</a></div>
+  <div class="note">
+    数据来源：腾讯行情（前复权）日线 / 新浪期货日K / Tushare 全市场聚合（严格TRIN）；均线为简单算术平均；偏离率 = 收盘 ÷ 均线 − 1。<br>
+    本页及图表为客观统计展示，不构成投资建议。
+  </div>
+</div>
+</body>
+</html>
