@@ -1,4 +1,5 @@
 # market-trends
+- `charts/etf_flow.html` 宽基ETF 份额加权统计（19 只）
 
 A股指数均线偏离 / 股指期货基差滚动分位 / 宽度与情绪看板，每个交易日收盘后自动更新。
 
